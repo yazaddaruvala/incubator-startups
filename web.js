@@ -1,18 +1,15 @@
-var http = require('http');
+//var url = require('url');
 var fs = require('fs');
+var app = require('express').createServer(), serverPort = process.env.PORT || 3000;
 
-var server = http.createServer(function(request, response) {
-//	response.writeHead(200, {'Content-Type':'text/html'});
-//	response.write('Love you M Peaseles! :)');
-//	response.end();
-	fs.readFile('index.html', function(err, data){
-		response.writeHead(200, {'Content-Type':'text/html'});
-		response.write(data);
-		response.end();
+app.get("/", function(request, response){
+	//var pathname = url.parse(request.url).pathname;
+	//if (pathname == "/") pathname = "index";
+	//console.log("Request for " + pathname + " recieved.");
+	fs.readFile("index.html", function(err, data){
+		response.send(data, {'Content-Type':'text/html'}, 200);
 	});
 });
-
-var port = process.env.PORT || 3000;
-server.listen(port, function(){
-  console.log("Listening on " + port);
+app.listen(serverPort, function(){
+	console.log("Listening on port " + serverPort);
 });

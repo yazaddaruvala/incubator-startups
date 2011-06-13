@@ -4,10 +4,11 @@ app.listen(serverPort, function(){
 	console.log("Listening on port " + serverPort);
 });
 
+//, incubatorName: "Y-Combinator"
 var db_names = [
-	{name: "aaaaa"},
-	{name: "sssss"},
-	{name: "ddddd"}
+	{name: "nowjs", crunchbaseURL: "NULL", websiteURL: "http://www.nowjs.com/"},
+	{name: "heroku", crunchbaseURL: "http://www.crunchbase.com/company/heroku", websiteURL: "http://www.heroku.com/"},
+	{name: "embedly", crunchbaseURL: "http://www.crunchbase.com/company/embed-ly", websiteURL: "http://www.embed.ly"}
 ]
 
 app.configure(function(){
@@ -16,10 +17,12 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-	res.render('index', { title: "Express", users: db_names } );
+	res.render('index', { PageTitle: "Incubator Startups", incubatorName: "All", users: db_names } );
 });
 
-
+app.get('/About', function(req, res){
+	res.render('About', { PageTitle: "About"});
+});
 
 
 

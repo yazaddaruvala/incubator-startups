@@ -1,0 +1,3 @@
+15 Jun 03:21:56 - Your node instance does not have root privileges. This means that the flash XML policy file will be served inline instead of on port 843. This will slow down initial connections slightly.
+15 Jun 03:21:56 - socket.io ready - accepting connections
+Listening on port 5000

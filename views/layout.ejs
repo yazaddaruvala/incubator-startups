@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title><%= PageTitle %> - StartupList</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="/nowjs/now.js"></script>
+<script>
+	$(document).ready(function(){
+		now.updateStartupList = function(data){
+			$('#startupList').empty();
+			$('#startupList').append(data[0].name);
+		}
+	});
+</script>
+</head>
+<body>
+	<h2 id="title"><%= PageTitle %></h2>
+	<%- body %>
+</body>
+<footer>
+	<a href="/">Home</a> <a href="/about">About</a>
+</footer>
+</html>
+

@@ -4,7 +4,7 @@ exports.init = function(){
 	//app.use(express.logger());
 	app.configure(function(){
 		app.set('views', __dirname + '/views');
-		app.set('view engine', 'jade');
+		app.set('view engine', 'ejs');
 	});
 
 	return app;

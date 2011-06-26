@@ -1,0 +1,22 @@
+{
+  "/type/startup": {
+    "_id": "/type/startup",
+    "type": "/type/type",
+    "name": "Startup",
+    "properties": {
+      "name": {"name": "Name", "unique": true, "type": "string", "required": true},
+      "url": {"name": "URL", "unique": false, "type": "string"},
+      "incubator": {"name": "Incubator", "unique": true, "type": "/type/incubator", "required": true},
+      "start_date": {"name": "Start_Date", "unique": true, "type": "string" }
+    }
+  },
+  "/type/incubator": {
+    "_id": "/type/incubator",
+    "type": "/type/type",
+    "name": "Incubator",
+    "properties": {
+      "name": { "name": "Name", "unique": true, "type": "string", "required": true },
+      "funded": {"name": "Funded", "unique": false, "type": "/type/startup"}
+    }
+  }
+}

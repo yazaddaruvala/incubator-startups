@@ -12,7 +12,9 @@
 $(document).ready(function(){
   now.updateStartupList = function(data){
     $('#startupList').empty();
-    $('#startupList').append(data[0].name);
+    for( var i = 0; i < data.length; i++){
+      $('#startupList').append("<div>" + data[i].name + "</div>");
+    }
   }
   $('#selectedStartup').change(function(){now.getStartupList(this.options[this.selectedIndex].text)});
 });

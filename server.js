@@ -27,16 +27,9 @@ var nowjs = require('now');
 var everyone = nowjs.initialize(app);
 
 everyone.now.getStartupList = function(selectedStartup){
-
-	var startupList = [
-		{ name: selectedStartup },
-		{ name: 'Y' },
-		{ name: 'Z' },
-	];
-	this.now.updateStartupList(startupList);
-//  _function_caller = this;
-//  db.getStartupList(selectedStartup, function(startupList){
-//	_function_caller.now.updateStartupList(startupList);
-//  });
+  _function_caller = this;
+  db.getStartupList(selectedStartup, function(startup){
+	_function_caller.now.appendStartup(startup);
+  });
 }
 

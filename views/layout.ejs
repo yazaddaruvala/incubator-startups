@@ -10,13 +10,15 @@
 <a href="/">Home</a> <a href="/about">About</a>
 <script>
 $(document).ready(function(){
-  now.updateStartupList = function(data){
-    $('#startupList').empty();
-    for( var i = 0; i < data.length; i++){
-      $('#startupList').append("<div>" + data[i].name + "</div>");
-    }
+  now.appendStartup = function(data){
+    htmlToAppend = '<div class="startup"><a href="'+data.url+'"><h4 id="name">'+data.name+'</h4></a>'+
+                   '<p id="summary">' + '</p>' + '</div>';
+    $('#content').append(htmlToAppend);
   }
-  $('#selectedStartup').change(function(){now.getStartupList(this.options[this.selectedIndex].text)});
+  $('#selectedStartup').change(function(){
+    $('#content').empty();
+    now.getStartupList(this.options[this.selectedIndex].text)
+  });
 });
 </script>
 </footer></html>

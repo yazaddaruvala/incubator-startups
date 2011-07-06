@@ -2,3 +2,5 @@ node_modules
 db/config.json
 db/data
 Procfile
+logs
+

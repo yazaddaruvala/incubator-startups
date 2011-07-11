@@ -7,6 +7,6 @@ However, for everyone who isn't the original author ('Yazad Daruvala'), if you w
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-And the Software shall only be used for the purpose of submitting pull requests, which are intended to be merged with the original authors code base.
+The Software shall only be used for the purpose of submitting pull requests. This means that 1. No legal entity shall hold onto the Software, modified or not, for an extended period of time. 2. On request any legal entity in possession of the Software must immediately send a pull request upstream, back towards the original author.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

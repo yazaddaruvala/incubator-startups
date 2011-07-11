@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html><head><title><%= PageTitle %> - StartupList</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script src="/nowjs/now.js"></script>
-</head>
-<body>
-<div class="pageContainer">
-<div class="pageHeader" align="center">
- <h2 id="title"><%= PageTitle %></h2><a href="/">Home</a> <a href="/about">About</a>
-</div>
-<div class="content"><%- body %></div>
-<div class="pageFooter" align="center">
- <a href="/">Home</a> <a href="/about">About</a>
-</div>
-<script>
 $(document).ready(function(){
   now.appendStartup = function(data){
     htmlToAppend = '<div class="startup">'+
@@ -30,7 +15,3 @@ $(document).ready(function(){
     now.getStartupList(this.options[this.selectedIndex].text)
   });
 });
-</script>
-</div>
-</body>
-</html>

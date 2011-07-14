@@ -3,4 +3,5 @@ db/config.json
 db/data
 Procfile
 logs
+Makefile
 

@@ -7,7 +7,7 @@ exports.init = function(){
     app.use(express.logger());
   });
 
-  app.listen( process.env.PORT || 5000);
+  app.listen(8001);
 
   return app;
 }

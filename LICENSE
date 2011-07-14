@@ -1,14 +1,12 @@
-(Modified MIT License)
-
+(Based very loosely off the MIT License)
 Copyright (c) 2011 Yazad Daruvala <y.daruvala@gmail.com>
 
-At the moment I don't know what type of license to use so I, the original author, Yazad Daruvala, am going to retain the power to remove this current license or change it, at any time, without notice, to any other license of my choosing, whenever I choose to do so. However, that being said this original license will always be in effect for all but the original software and associated files even after the original license has been removed or changed altogether.
+All rights reserved.
 
-Other than that permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+However, for everyone who isn't the original author ('Yazad Daruvala'), if you would like to help, I hereby grant, free of charge, to any person, permission to copy, modify, test, merge, and redistribute the software and associated documentation files (the 'Software'), subject to the following conditions:
 
-The Software cannot be used for or as any commercial product or service without the full and complete permission from and cooperation of the original author and requires explicit written confirmation from the original author, in this case Yazad Daruvala. This applies weather or not that product or service provides any monetary benefit.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Also as normal the above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The Software shall only be used for the purpose of submitting pull requests. This means that 1. No legal entity shall hold onto the Software, modified or not, for an extended period of time. 2. On request any legal entity in possession of the Software must immediately send a pull request upstream, back towards the original author.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
